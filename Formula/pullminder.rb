@@ -14,7 +14,7 @@ class Pullminder < Formula
       sha256 "b67ed356af21520f7c41b5416c58e9a1834eb6932f63811a2c0527e4e3574930"
 
       define_method(:install) do
-        bin.install "pullminder" => "pullminder"
+        bin.install "pullminder-darwin-amd64" => "pullminder"
       end
     end
     if Hardware::CPU.arm?
@@ -22,7 +22,7 @@ class Pullminder < Formula
       sha256 "b67ed356af21520f7c41b5416c58e9a1834eb6932f63811a2c0527e4e3574930"
 
       define_method(:install) do
-        bin.install "pullminder" => "pullminder"
+        bin.install "pullminder-darwin-arm64" => "pullminder"
       end
     end
   end
@@ -32,14 +32,14 @@ class Pullminder < Formula
       url "https://github.com/pullminder/cli/releases/download/v0.1.6/pullminder-linux-amd64"
       sha256 "b67ed356af21520f7c41b5416c58e9a1834eb6932f63811a2c0527e4e3574930"
       define_method(:install) do
-        bin.install "pullminder" => "pullminder"
+        bin.install "pullminder-linux-amd64" => "pullminder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pullminder/cli/releases/download/v0.1.6/pullminder-linux-arm64"
       sha256 "b67ed356af21520f7c41b5416c58e9a1834eb6932f63811a2c0527e4e3574930"
       define_method(:install) do
-        bin.install "pullminder" => "pullminder"
+        bin.install "pullminder-linux-arm64" => "pullminder"
       end
     end
   end
