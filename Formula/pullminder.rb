@@ -6,7 +6,7 @@ class Pullminder < Formula
   desc "Pullminder CLI — manage custom rule registries"
   homepage "https://pullminder.com"
   version "0.1.6"
-  license "MIT"
+  license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
