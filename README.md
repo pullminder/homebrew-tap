@@ -51,7 +51,7 @@ brew untap pullminder/tap
 |--------|---------|
 | npm | `npm install -g pullminder` |
 | npx | `npx pullminder --help` |
-| curl | `curl -fsSL https://raw.githubusercontent.com/pullminder/cli/main/install.sh \| sh` |
+| curl | `curl -fsSL https://get.pullminder.com \| sh` |
 | Manual | [Download from releases](https://github.com/pullminder/cli/releases) |
 
 ## Formula maintenance
