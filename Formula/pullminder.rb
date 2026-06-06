@@ -5,21 +5,21 @@
 class Pullminder < Formula
   desc "Pullminder CLI — manage custom rule registries"
   homepage "https://pullminder.com"
-  version "0.1.18"
+  version "0.1.19"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pullminder/cli/releases/download/v0.1.18/pullminder-darwin-amd64"
-      sha256 "33b1bf51c6ddc6a9823c9efe1e39636e598be8c12c0711d9c2ceaf604f56c5d6"
+      url "https://github.com/pullminder/cli/releases/download/v0.1.19/pullminder-darwin-amd64"
+      sha256 "2f88c5927a40fa96b97197948c65822c0b9e50073885d402240666d7d58fb6f5"
 
       define_method(:install) do
         bin.install "pullminder-darwin-amd64" => "pullminder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pullminder/cli/releases/download/v0.1.18/pullminder-darwin-arm64"
-      sha256 "927727f46f18703b18b6ebcad6764de3b4277358b65970396dcf111fdd58f76c"
+      url "https://github.com/pullminder/cli/releases/download/v0.1.19/pullminder-darwin-arm64"
+      sha256 "b8733abd76953acfba3ebcc801af5ee42e9b853e35b9c1a3c58a883656f6a427"
 
       define_method(:install) do
         bin.install "pullminder-darwin-arm64" => "pullminder"
@@ -29,15 +29,15 @@ class Pullminder < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pullminder/cli/releases/download/v0.1.18/pullminder-linux-amd64"
-      sha256 "9bbe6846a85114a566bc7f462b08d4f820eb06ec22f51fe8ed0e5f51c01a50d5"
+      url "https://github.com/pullminder/cli/releases/download/v0.1.19/pullminder-linux-amd64"
+      sha256 "83c913cf6fd0638c3b522e7e627d4c0a654177050b4b417fb00a3e016baa3c7a"
       define_method(:install) do
         bin.install "pullminder-linux-amd64" => "pullminder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pullminder/cli/releases/download/v0.1.18/pullminder-linux-arm64"
-      sha256 "adb45b37d5cfbd6fb665be506a0dad25b773d67c9ea0bf8bd1ca1861d275fcf9"
+      url "https://github.com/pullminder/cli/releases/download/v0.1.19/pullminder-linux-arm64"
+      sha256 "946944b58b8f3b0d4490ea44d0ec48290dea8b273ceb74b9dee2499235732351"
       define_method(:install) do
         bin.install "pullminder-linux-arm64" => "pullminder"
       end
